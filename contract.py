@@ -20,5 +20,10 @@ class contract:
         converted_response = bool(rounded_responses(response_num_rounded))
         return("Converted ranking to are you satisfied False = No, True = YES", converted_response)
     
+    def servings_vs_spices(servings):
+        spices = servings * (6*2)/3
+        values = max(servings) + min(spices)
+        return values
+    
     
         
